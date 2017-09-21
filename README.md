@@ -1,4 +1,4 @@
-Antonio Díaz Pozuelo's URV-UOC practices of Computer and mathematical engineering master.
+Antonio Díaz Pozuelo's UOC practices of computer and mathematical engineering master.
 
 ===========
 License:
