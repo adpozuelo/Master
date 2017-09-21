@@ -1,6 +1,6 @@
-Antonio Díaz Pozuelo's UOC practices of computer and mathematical engineering master.
+# URV-UOC
 
+<p>Antonio Díaz Pozuelo's UOC practices of computer and mathematical engineering master</p>
 ===========
-License:
-
-All my code is GNU GENERAL PUBLIC LICENSE (see LICENSE file) and other code is property of their respective owners.
+<p><b> License: </b></p>
+<p> All my code is GNU GENERAL PUBLIC LICENSE (see LICENSE file) and other code is property of their respective owners.</p>
