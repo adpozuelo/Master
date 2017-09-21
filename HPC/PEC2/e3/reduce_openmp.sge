@@ -1,0 +1,10 @@
+#!/bin/bash
+#$ -cwd
+#$ -S /bin/bash
+#$ -pe openmp 4
+export OMP_NUM_THREADS=$NSLOTS
+if [ -e "$2" ]; then
+    ./reduce_openmp $1 >> $2
+else 
+    ./reduce_openmp $1 > $2
+fi 

@@ -1,0 +1,10 @@
+#!/bin/bash
+#$ -cwd
+#$ -S /bin/bash
+export OMP_NUM_THREADS=4
+
+if [ -e "$6" ]; then
+    mpirun -np $1 ./barr_sync_omp $2 $3 $4 $5 >> $6
+else
+	mpirun -np $1 ./barr_sync_omp $2 $3 $4 $5 > $6
+fi 

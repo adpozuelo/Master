@@ -1,0 +1,8 @@
+#!/bin/bash
+#$ -cwd
+#$ -S /bin/bash
+if [ -e "$2" ]; then
+    ./mm $1 >> $2
+else 
+    ./mm $1 > $2
+fi 

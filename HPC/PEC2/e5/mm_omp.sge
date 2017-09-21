@@ -1,0 +1,10 @@
+#!/bin/bash
+#$ -cwd
+#$ -S /bin/bash
+export OMP_NUM_THREADS=$2
+export OMP_SCHEDULE=$3
+if [ -e "$4" ]; then
+    ./mm_omp $1 >> $4
+else 
+    ./mm_omp $1 > $4
+fi 

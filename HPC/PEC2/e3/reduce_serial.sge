@@ -1,0 +1,8 @@
+#!/bin/bash
+#$ -cwd
+#$ -S /bin/bash
+if [ -e "$2" ]; then
+    ./reduce_serial $1 >> $2
+else 
+    ./reduce_serial $1 > $2
+fi 

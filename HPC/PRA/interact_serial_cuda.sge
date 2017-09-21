@@ -1,0 +1,10 @@
+#!/bin/bash
+#$ -cwd
+#$ -S /bin/bash
+#$ -q gpu.q@ladon33
+if [ -e "$2" ]; then
+    ./interact_serial_cuda $1 >> $2
+else 
+    ./interact_serial_cuda $1 > $2
+fi 
+

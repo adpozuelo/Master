@@ -1,0 +1,9 @@
+#!/bin/bash
+#$ -cwd
+#$ -S /bin/bash
+
+if [ -e "$6" ]; then
+    mpirun -np $1 ./barr_sync_base $2 $3 $4 $5 >> $6
+else
+	mpirun -np $1 ./barr_sync_base $2 $3 $4 $5 > $6
+fi 
